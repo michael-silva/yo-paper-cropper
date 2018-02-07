@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="yo-paper-cropper">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <h2>Hello [[prop1]]!</h2>
+    </template>
+
+    <script>
+        /**
+         * `yo-paper-cropper`
+         * An element to wrap Croppr.js
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class YoPaperCropper extends Polymer.Element {
+            static get is() { return 'yo-paper-cropper'; }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'yo-paper-cropper'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(YoPaperCropper.is, YoPaperCropper);
+    </script>
+</dom-module>
