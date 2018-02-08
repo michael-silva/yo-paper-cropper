@@ -1,18 +1,20 @@
 {
-  "name": "yo-paper-cropper",
-  "description": "An element to wrap Croppr.js",
-  "main": "yo-paper-cropper.html",
-  "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0",
-    "iron-image": "^2.1.2",
-    "cropperjs": "^1.2.2"
-  },
-  "devDependencies": {
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
-    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
-  },
-  "resolutions": {
-    "polymer": "^2.0.0"
-  }
+    "version": "0.0.1",
+    "name": "yo-paper-cropper",
+    "description": "An element to wrap Croppr.js",
+    "main": "yo-paper-cropper.html",
+    "license": "MIT",
+    "dependencies": {
+        "polymer": "Polymer/polymer#^2.0.0",
+        "iron-image": "^2.1.2",
+        "cropperjs": "^1.2.2"
+    },
+    "devDependencies": {
+        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+        "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    },
+    "resolutions": {
+        "polymer": "^2.0.0"
+    }
 }
