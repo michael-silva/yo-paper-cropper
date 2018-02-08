@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "name": "yo-paper-cropper",
-    "description": "An element to wrap Croppr.js",
+    "description": "An element to wrap Cropper.js",
     "main": "yo-paper-cropper.html",
     "license": "MIT",
     "dependencies": {

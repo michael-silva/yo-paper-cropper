@@ -1,18 +1,42 @@
 # \<yo-paper-cropper\>
 
-An element to wrap Croppr.js
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/michael-silva/yo-paper-cropper)
 
-## Install the Polymer-CLI
+An element to wrap Cropper.js
+
+## Example of usage ##
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="yo-paper-cropper.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<yo-paper-cropper src="https://images.pexels.com/photos/843256/pexels-photo-843256.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></yo-paper-cropper>
+```
+
+## Options ##
+
+The **options** atrribute receive an object with all options allowed by Cropper.js.
+View all options at [Cropper.js](https://github.com/fengyuanchen/cropperjs/blob/master/README.md#options) repoository
+
+## For developers ##
+
+### Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
 
-## Viewing Your Element
+### Viewing Your Element
 
 ```
 $ polymer serve
 ```
 
-## Running Tests
+### Running Tests
 
 ```
 $ polymer test
