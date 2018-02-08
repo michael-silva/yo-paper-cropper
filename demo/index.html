@@ -24,7 +24,26 @@
         <h3>Basic yo-paper-cropper demo</h3>
         <demo-snippet>
             <template>
-                <yo-paper-cropper></yo-paper-cropper>
+                <yo-paper-cropper src="https://images.pexels.com/photos/843256/pexels-photo-843256.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></yo-paper-cropper>
+            </template>
+        </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+        <h3>Basic 2 yo-paper-cropper demo</h3>
+        <demo-snippet>
+            <template>
+                <yo-paper-cropper src="https://images.pexels.com/photos/428376/pexels-photo-428376.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></yo-paper-cropper>
+            </template>
+        </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+        <h3>Passing options to yo-paper-cropper demo</h3>
+        <demo-snippet>
+            <template>
+                <yo-paper-cropper id="example3" src="https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></yo-paper-cropper>
+                <script>
+                    document.querySelector('#example3').options = { dragMode: 'none', viewMode: 2,  cropBoxResizable: false, minCropBoxHeight: 100, minCropBoxWidth: 50 };
+                </script>
             </template>
         </demo-snippet>
     </div>
