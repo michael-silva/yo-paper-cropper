@@ -32,9 +32,6 @@ Triggered when image is loaded
 ### cropper-ready ###
 Triggered after image is loaded and when cropperjs is rendered
 
-### cropper-updated ###
-Triggered after cropper is ready and has some change at options
-
 ## For developers ##
 
 ### Install the Polymer-CLI

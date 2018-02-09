@@ -42,7 +42,11 @@
             <template>
                 <yo-paper-cropper id="example3" src="https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"></yo-paper-cropper>
                 <script>
-                    document.querySelector('#example3').options = { dragMode: 'none', viewMode: 2,  cropBoxResizable: false, minCropBoxHeight: 100, minCropBoxWidth: 50 };
+                    const cropper = document.querySelector('#example3');
+                    cropper.options = { dragMode: 'none', viewMode: 2,  cropBoxResizable: false, minCropBoxHeight: 100, minCropBoxWidth: 50 };
+                    cropper.addEventListener('cropper-ready', e => {
+                        console.log('cropper-ready');
+                    })
                 </script>
             </template>
         </demo-snippet>

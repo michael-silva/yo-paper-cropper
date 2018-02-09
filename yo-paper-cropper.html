@@ -60,14 +60,12 @@
             _optionsChanged() {
                 if (this._cropper) {
                     this._renderCrop();
-                    this.dispatchEvent(new CustomEvent('cropper-updated'));
                 }
             }
 
             _imageLoaded() {
                 this.dispatchEvent(new CustomEvent('image-loaded'));
                 this._renderCrop();
-                this.dispatchEvent(new CustomEvent('cropper-ready'));
             }
 
             _renderCrop() {
@@ -79,6 +77,12 @@
                 }
 
                 this.$.wrapper.setAttribute('style', 'max-width: ' + this.$.image.offsetWidth + 'px');
+
+                const _ready = this.options.ready;
+                this.options.ready = (e) => {
+                    if (_ready) _ready(e);
+                    this.dispatchEvent(new CustomEvent('cropper-ready'));
+                }
 
                 this._cropper = new window.Cropper(this.$.image, this.options);
             }
