@@ -73,6 +73,7 @@
                     return console.error('Cropper has not been initialized');
 
                 if (this._cropper) {
+                    this.$.wrapper.removeAttribute('style');
                     this._cropper.destroy();
                 }
 
