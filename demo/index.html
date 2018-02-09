@@ -44,6 +44,11 @@
                 <script>
                     const cropper = document.querySelector('#example3');
                     cropper.options = { dragMode: 'none', viewMode: 2,  cropBoxResizable: false, minCropBoxHeight: 100, minCropBoxWidth: 50 };
+                    cropper.addEventListener('image-loaded', e => {
+                        //if you discomment bellow line, the event cropper-ready dont trigger
+                        //e.preventDefault();
+                        console.log('image-ready');
+                    })
                     cropper.addEventListener('cropper-ready', e => {
                         console.log('cropper-ready');
                     })

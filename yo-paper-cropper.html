@@ -64,8 +64,8 @@
             }
 
             _imageLoaded() {
-                this.dispatchEvent(new CustomEvent('image-loaded'));
-                this._renderCrop();
+                const cancelled = !this.dispatchEvent(new CustomEvent('image-loaded', { cancelable: true }));
+                if (!cancelled) this._renderCrop();
             }
 
             _renderCrop() {
