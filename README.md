@@ -24,6 +24,17 @@ An element to wrap Cropper.js
 The **options** atrribute receive an object with all options allowed by Cropper.js.
 View all options at [Cropper.js](https://github.com/fengyuanchen/cropperjs/blob/master/README.md#options) repoository
 
+## Events ##
+
+### image-loaded ###
+Triggered when image is loaded
+
+### cropper-ready ###
+Triggered after image is loaded and when cropperjs is rendered
+
+### cropper-updated ###
+Triggered after cropper is ready and has some change at options
+
 ## For developers ##
 
 ### Install the Polymer-CLI

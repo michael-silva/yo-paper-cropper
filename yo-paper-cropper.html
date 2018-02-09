@@ -28,7 +28,7 @@
             }
         </style>
         <div id="wrapper">
-            <img id="image" class="image" src="[[src]]" on-load="_renderCrop">
+            <img id="image" class="image" src="[[src]]" on-load="_imageLoaded">
         </div>
     </template>
 
@@ -60,7 +60,14 @@
             _optionsChanged() {
                 if (this._cropper) {
                     this._renderCrop();
+                    this.dispatchEvent(new CustomEvent('cropper-updated'));
                 }
+            }
+
+            _imageLoaded() {
+                this.dispatchEvent(new CustomEvent('image-loaded'));
+                this._renderCrop();
+                this.dispatchEvent(new CustomEvent('cropper-ready'));
             }
 
             _renderCrop() {
